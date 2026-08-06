@@ -170,8 +170,10 @@ def train_bpe(
 
 if __name__ == '__main__':
     start_time = time.time()
-    data_dir = Path("/essfs10/daicheng/datasets/TinyStories")
-    save_path = Path("/essfs10/daicheng/cs336/hw1/pretrained_models")
+    project_root = Path(__file__).resolve().parents[1]
+    data_dir = project_root / "datasets" / "TinyStories"
+    save_path = project_root / "pretrained_models"
+    save_path.mkdir(parents=True, exist_ok=True)
     vocab, merges = train_bpe(
         data_dir / "TinyStories.txt",
         vocab_size=10_000,
@@ -186,4 +188,4 @@ if __name__ == '__main__':
     with (save_path / "merges_10000.pkl").open("wb") as file:
         pickle.dump(merges, file)
 
-    print(f"vocab_size={len(vocab)} merges={len(merges)}, time={interval_time}") # vocab_size=10000 merges=9743, time=110.47445774078369
+    print(f"vocab_size={len(vocab)} merges={len(merges)}, time={interval_time}")

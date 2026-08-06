@@ -163,7 +163,7 @@ class Tokenizer:
 
 
 if __name__ == "__main__":
-    model_dir = Path("/essfs10/daicheng/cs336/hw1/pretrained_models")
+    model_dir = Path(__file__).resolve().parents[1] / "pretrained_models"
     tokenizer = Tokenizer.from_pickle(
         vocab_path=model_dir / "vocab_10000.pkl",
         merges_path=model_dir / "merges_10000.pkl",

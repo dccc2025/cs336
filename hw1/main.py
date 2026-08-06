@@ -20,7 +20,6 @@ from modules.utils import clip_grad_norm_, get_batch
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent
-DATASET_DIR = Path("/essfs10/daicheng/datasets/TinyStories")
 
 
 @dataclass(frozen=True)
