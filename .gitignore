@@ -1,0 +1,31 @@
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local configuration
+.env
+.DS_Store
+
+# Datasets and generated artifacts (never commit these)
+**/datasets/
+**/data/
+**/pretrained_models/
+**/checkpoints/
+**/outputs/
+**/results/
+**/runs/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.npy
+*.npz
+*.pkl
+*.log
+*.tmp
