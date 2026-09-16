@@ -14,8 +14,10 @@ __pycache__/
 
 # Datasets and generated artifacts (never commit these)
 **/datasets/
+/data
 /data/**
 !/data/**/.gitkeep
+/artifacts
 /artifacts/**
 !/artifacts/**/.gitkeep
 **/pretrained_models/
@@ -23,6 +25,9 @@ __pycache__/
 **/outputs/
 **/results/
 **/runs/
+*.egg-info/
+dist/
+build/
 *.pt
 *.pth
 *.ckpt

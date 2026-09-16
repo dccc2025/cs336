@@ -1,3 +1,0 @@
-torch
-triton
-numpy
