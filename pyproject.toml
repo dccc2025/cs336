@@ -1,0 +1,13 @@
+[project]
+name = "cs336"
+version = "0.1.0"
+description = "Train a 0.1B LLM from scratch on 2 GPUs"
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "triton",
+    "numpy",
+]
+
+[tool.setuptools.packages.find]
+include = ["modules*"]

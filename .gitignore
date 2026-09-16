@@ -14,7 +14,10 @@ __pycache__/
 
 # Datasets and generated artifacts (never commit these)
 **/datasets/
-**/data/
+/data/**
+!/data/**/.gitkeep
+/artifacts/**
+!/artifacts/**/.gitkeep
 **/pretrained_models/
 **/checkpoints/
 **/outputs/

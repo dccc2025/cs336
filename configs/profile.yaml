@@ -1,0 +1,6 @@
+outdir: artifacts/profiles
+# Time, comm, and peak memory on 2 GPUs. Write notes under reports/.
+warmup_steps: 5
+measure_steps: 20
+trace: true
+memory: true

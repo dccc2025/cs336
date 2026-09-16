@@ -9,3 +9,4 @@ python "$PROJECT_ROOT/main.py" generate \
   --device "${DEVICE:-cuda:6}" \
   --prompt "${PROMPT:-Once upon a time}" \
   "$@"
+ssh -p 45399 root@connect.bjb1.seetacloud.com

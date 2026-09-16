@@ -1,0 +1,14 @@
+domains:
+  - cv
+  - llm
+  - vlm
+  - hadar
+hadar: thermal imaging / sensing
+language: en
+style: academic qa
+papers_dir: data/sft/papers
+qa_dir: data/sft/qa
+# Start with dozens of papers to prove article → DeepSeek → jsonl
+bootstrap_papers: 40
+qa_api: deepseek
+# DPO later: human labels first, then API expand. Do not start DPO now.

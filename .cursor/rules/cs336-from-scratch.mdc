@@ -1,0 +1,12 @@
+---
+description: 0.1B from-scratch 长程纲领：先读 skill，未经明示禁止落盘
+alwaysApply: true
+---
+
+# 本仓库长程约束
+
+先读并遵守 `.cursor/skills/cs336-from-scratch/SKILL.md`。
+
+路线：HW1 冒烟已完成 → 并行 FineWeb-Edu（约 2B tokens）+ 手写 Triton / FlashAttn / opt shard / 2 卡 FSDP / profiling / 显存 → 32k BPE → 预训练 0.1B @ 2048 → 学术 SFT（CV / LLM / VLM / HADAR，DeepSeek 生成问答）→ 以后再 DPO（人工 + API）。
+
+CS336 作业口径不严格执行，关注从零训练。未经用户明确说写入仓库 / 改文件 / 保存到磁盘之前，只准在聊天框生成代码。对话用简体中文。

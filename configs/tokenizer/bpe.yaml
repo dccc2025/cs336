@@ -1,0 +1,7 @@
+# Retrain BPE on FineWeb-Edu. Do not reuse TinyStories 10k.
+vocab_size: 32000
+special_tokens:
+  - "<|endoftext|>"
+language: en
+# Fit in 64GB RAM: reservoir-sample the corpus, never load all raw text.
+train_sample_bytes: 4000000000

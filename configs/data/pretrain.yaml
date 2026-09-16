@@ -1,0 +1,10 @@
+source: fineweb-edu
+language: en
+target_tokens: 2000000000
+# Chinchilla: ~0.1B params × 20 tokens/param
+stream: true
+raw_dir: data/raw/fineweb
+clean_dir: data/clean/pretrain
+tokenized_dir: data/tokenized/pretrain
+tokenizer_dir: data/tokenizer
+shard_tokens: 16000000
