@@ -41,4 +41,11 @@ def _flash_attn_fwd_kernel(
     BLOCK_D: tl.constexpr
 ):
     # one program = one (batch, head, Q-block)
+    pid_b = tl.program_id(0)
+    pid_h = tl.program_id(1)
+    pid_m = tl.program_id(2)
+
+    offs_m = pid_m * BLOCK_M + tl.arange(0, BLOCK_M)
+    offs_d = tl.arange(0, BLOCK_D)
+
     
