@@ -1,8 +1,0 @@
-nproc_per_node: 2
-seq_len: 2048
-precision: fp16
-max_lr: 5.0e-5
-epochs: 2
-micro_batch_size: 2
-checkpoint_dir: artifacts/checkpoints/sft
-base_checkpoint: artifacts/checkpoints/pretrain
